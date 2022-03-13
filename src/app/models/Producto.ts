@@ -7,4 +7,5 @@ export interface  Producto {
     price?:number,
     starRating?:number,
     imageUrl?:string,
+    icon?:string,
 }
