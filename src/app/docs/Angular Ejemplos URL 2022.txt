@@ -83,6 +83,10 @@ https://github.com/rolandoHR93/front.leptus/blob/master/src/app/modules/auth/sig
  private _formBuilder: FormBuilder, this._formBuilder.group({
 https://github.com/rolandoHR93/front.leptus/blob/master/src/app/modules/auth/sign-up/sign-up.component.ts
 
+ performFilter(filterBy: string): IProduct[] {}, next: products => {}, product-detail.guard.ts
+https://github.com/DeborahK/Angular-GettingStarted/blob/master/APM-Final/src/app/products/product-list.component.ts
+
+
 ================================================ ✔✔✔✔✔
 ***** ROUTES 🛑🛑🛑
 ================================================
@@ -101,6 +105,9 @@ https://github.com/rolandoHR93/front.leptus/blob/master/src/app/app-routing.modu
 
 loadChildren - import
 https://github.com/rolandoHR93/leptus/blob/master/src/app/app-routing.module.ts
+
+RouterModule.forChild([
+https://github.com/DeborahK/Angular-GettingStarted/blob/master/APM-Final/src/app/products/product.module.ts
 
 ================================================
 Intercept - Helper 🆓🆓
