@@ -8,6 +8,7 @@ import { FooterComponent } from './pages/shared/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductosComponent } from './pages/productos/productos.component';
 import { UsuariosComponent } from './pages/usuarios/usuarios.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { UsuariosComponent } from './pages/usuarios/usuarios.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
