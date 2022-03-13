@@ -37,7 +37,9 @@ export class ProductoDetailsComponent implements OnInit, OnDestroy {
 
   getProducto(id: number): void {
     this.interObservableSubs$ = this._productoService.getProduct(id).subscribe({
-      next: product => {this.product = product; if(!product) this.errorNoExiste = true;
+      next: product => {
+        this.product = product;
+        if(!product) this.errorNoExiste = true;
       },
       error: err => this.errorMessage = err
     });
