@@ -15,7 +15,7 @@ export class UsuariosService {
   getUsuarios(): Observable<Usuario[]>{
     return this._http.get<Usuario[]>(this.productUrl).pipe(
       map((user: any) =>{
-        return user.objects
+        return user.objects // <= *** ◄◄◄◄ dentro de objects
       })
     );
   }
