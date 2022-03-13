@@ -50,6 +50,9 @@ https://github.com/rolando167/angular-api-rest-Adv1/blob/master/src/app/_service
 
 Propio V2 - file.Json 
 https://github.com/rolando167/angular-json-adv2/blob/master/src/app/services/usuarios.service.ts
+
+*Full Crud,  readById(id: number): Observable<Product> {}
+https://github.com/cod3rcursos/angular-crud/blob/master/frontend/src/app/components/product/product.service.ts
 ================================================
 ================================================ ✔✔✔✔✔
 ***** COMPONENTS.ts 🌀🌀🌀
@@ -213,6 +216,9 @@ TIPS AYUDA
   // https://mockoon.com/docs/latest/cors/
 
 https://jsonplaceholder.typicode.com/
+
+Ojo:
+No olvidar Exportar en app.module (sino pantalla blanca xd) = FormsModule,ReactiveFormsModule, HttpClientModule
 ================================================
 
 ================================================
