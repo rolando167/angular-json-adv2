@@ -4,7 +4,7 @@ export interface  Producto {
     productCode?:string,
     releaseDate?:string,
     description?:string,
-    price?:string,
-    starRating?:string,
+    price?:number,
+    starRating?:number,
     imageUrl?:string,
 }
