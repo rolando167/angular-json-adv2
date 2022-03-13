@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Subscription } from 'rxjs';
 import { Producto } from 'src/app/models/Producto';
 import { ProductosService } from 'src/app/services/productos.service';
 
@@ -8,10 +9,14 @@ import { ProductosService } from 'src/app/services/productos.service';
   templateUrl: './producto-details.component.html',
   styleUrls: ['./producto-details.component.css']
 })
-export class ProductoDetailsComponent implements OnInit {
+export class ProductoDetailsComponent implements OnInit, OnDestroy {
 
   errorMessage = '';
+  errorNoExiste = '';
+
   product: Producto | undefined;
+
+  public interObservableSubs$!: Subscription;
 
   constructor(private route: ActivatedRoute,
             private router: Router,
@@ -25,9 +30,13 @@ export class ProductoDetailsComponent implements OnInit {
     }
   }
 
+  ngOnDestroy(): void {
+    this.interObservableSubs$.unsubscribe();
+  }
+
 
   getProducto(id: number): void {
-    this._productoService.getProduct(id).subscribe({
+    this.interObservableSubs$ = this._productoService.getProduct(id).subscribe({
       next: product => this.product = product,
       error: err => this.errorMessage = err
     });

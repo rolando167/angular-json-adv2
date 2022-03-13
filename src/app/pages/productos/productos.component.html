@@ -16,6 +16,7 @@
         <th scope="col">Description</th>
         <th scope="col">Precio</th>
         <th scope="col">Rating</th>
+        <th scope="col">Icono</th>
       </tr>
     </thead>
     <tbody *ngIf='productos.length'>
@@ -27,6 +28,7 @@
         <td>{{ item.description }}</td>
         <td>{{ item.price| currency:'USD':'symbol':'1.2-2' }}</td>
         <td>{{ item.starRating }}</td>
+        <td>{{ item.icon }}</td>
       </tr>
     </tbody>
   </table>
