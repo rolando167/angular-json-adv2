@@ -20,7 +20,7 @@
     </thead>
     <tbody>
       <tr *ngFor="let item of productos">
-        <th scope="row">{{item.productId}}</th>
+        <th scope="row"><a routerLink="/productos/{{item.productId}}">{{item.productId}}</a></th>
         <td>{{ item.productName }}</td>
         <td>{{ item.productCode }}</td>
         <td>{{ item.releaseDate }}</td>
