@@ -1,5 +1,5 @@
 export interface  Producto {
-    productId?:string,
+    productId?:number,
     productName?:string,
     productCode?:string,
     releaseDate?:string,
