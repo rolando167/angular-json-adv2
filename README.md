@@ -7,6 +7,8 @@ FrontEnd Angular 🅰 - Json file Api - RouterLink a -Read - Components 2022
  
  Angular Ejemplos URL 2022 - FULL - Docs
  
+ 
+ <img src="main.jpg" />
 # AngularApiAdv2
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
