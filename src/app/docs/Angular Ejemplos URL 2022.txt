@@ -1,0 +1,211 @@
+ Angular 🅰- 2022
+================================================ ✔✔✔✔✔
+⚠►►►►  SERVICES ⚠►►►►
+================================================
+_userService - httpOptions
+https://github.com/rolandoHR93/front.leptus/blob/master/src/app/core/auth/auth.service.ts
+
+public  - sessionStorage
+https://github.com/rolandoHR93/front.leptus/blob/master/src/app/core/services/auth/token-storage.service.ts
+
+throwError - Observable<any>
+https://github.com/rolandoHR93/front.leptus/blob/master/src/app/core/services/auth/auth.service.ts
+
+pipe - map - next
+https://github.com/rolandoHR93/front.leptus/blob/master/src/app/core/user/user.service.ts
+-------
+sessionStorage
+https://github.com/rolando167/pr-angular-jwt-node-mysql/blob/master/src/app/_services/token-storage.service.ts
+
+httpOptions
+https://github.com/rolando167/pr-angular-jwt-node-mysql/blob/master/src/app/_services/auth.service.ts
+
+localStorage
+https://github.com/rolando167/ud-angular-login/blob/master/src/app/services/auth.service.ts
+
+🅰
+****httpOptions
+https://github.com/rolandoHR93/leptus/blob/master/src/app/_services/auth.service.ts
+
+sessionStorage
+https://github.com/rolandoHR93/leptus/blob/master/src/app/_services/token-storage.service.ts
+
+***private _contact: BehaviorSubject<Contact | null> = new BehaviorSubject(null); , return this._countries.asObservable();
+https://github.com/rolandoHR93/front.leptus/blob/master/src/app/modules/contacts/contacts.service.ts
+*const contact = contacts.find(item => item.id === id) || null;  throwError
+
+getContactById take(1), const contact = contacts.find(item => item.id === id) || null; this._contact.next(contact);
+https://github.com/rolandoHR93/front.leptus/blob/master/src/app/modules/contacts/contacts.service.ts
+
+*signIn(credentials: { email: string; password: string }): Observable<any>{}
+https://github.com/rolandoHR93/front.leptus/blob/a12614266b3b00d67c9df48d5504f4efbe14400e/src/app/core/auth/auth.service.ts
+*this._authService.signIn(this.signInForm.value)
+https://github.com/rolandoHR93/front.leptus/blob/master/src/app/modules/auth/sign-in/sign-in.component.ts
+
+ getUsers(): Observable<UserInterface[]> {}, map((users: UserInterface[]) => {
+https://github.com/monsterlessonsacademy/monsterlessonsacademy/blob/rxjs-and-streams-in-angular/src/app/services/users.service.ts
+
+***map((data : any) => data?.users || data) // Evitar informacion basura, y algo mas solido
+https://github.com/rolando167/angular-api-rest-Adv1/blob/master/src/app/_services/usuarios.service.ts
+
+================================================
+================================================ ✔✔✔✔✔
+***** COMPONENTS.ts 🌀🌀🌀
+================================================
+
+Login Ingection
+https://github.com/rolando167/pr-angular-jwt-node-mysql/blob/master/src/app/login/login.component.ts
+
+JSON.parse()
+https://github.com/rolando167/pr-angular-jwt-node-mysql/blob/master/src/app/home/home.component.ts
+
+this.authService.register - subscribe
+https://github.com/rolando167/pr-angular-jwt-node-mysql/blob/master/src/app/register/register.component.ts
+
+document.body.style.cursor = 'progress';
+https://github.com/rolandoHR93/leptus/blob/master/src/app/pages/auth/login-page/login-page.component.ts
+
+
+contacts$: Observable<Contact[]>;
+https://github.com/rolandoHR93/front.leptus/blob/master/src/app/modules/contacts/list/list.component.ts
+
+contacts: Contact[];     countries: Country[];  this.contactForm = this._formBuilder.group({
+https://github.com/rolandoHR93/front.leptus/blob/master/src/app/modules/contacts/details/details.component.ts
+
+this._userService.user$.subscribe((user) => { , @ViewChild
+https://github.com/rolandoHR93/front.leptus/blob/master/src/app/modules/auth/unlock-session/unlock-session.component.ts
+
+this._formBuilder.group, const redirectURL = this._activatedRoute.snapshot.queryParamMap.get('redirectURL') || '/signed-in-redirect';
+https://github.com/rolandoHR93/front.leptus/blob/master/src/app/modules/auth/sign-in/sign-in.component.ts
+
+ private _formBuilder: FormBuilder, this._formBuilder.group({
+https://github.com/rolandoHR93/front.leptus/blob/master/src/app/modules/auth/sign-up/sign-up.component.ts
+
+================================================ ✔✔✔✔✔
+***** ROUTES 🛑🛑🛑
+================================================
+simples
+https://github.com/rolando167/pr-angular-jwt-node-mysql/blob/master/src/app/app-routing.module.ts
+
+canActivate:[ AuthGuard]
+https://github.com/rolando167/ud-angular-login/blob/master/src/app/app-routing.module.ts
+
+imports - PagesRoutingModule
+https://github.com/rolando167/ud-angular-adminpro/blob/master/src/app/app-routing.module.ts
+
+
+loadChildren
+https://github.com/rolandoHR93/front.leptus/blob/master/src/app/app-routing.module.ts
+
+loadChildren - import
+https://github.com/rolandoHR93/leptus/blob/master/src/app/app-routing.module.ts
+
+================================================
+Intercept - Helper 🆓🆓
+================================================
+https://github.com/rolando167/pr-angular-jwt-node-mysql/blob/master/src/app/_helpers/auth.interceptor.ts
+
+
+================================================ ✔✔✔✔✔
+***** MODELS ☑☑☑☑⏏
+================================================
+id?: any;
+https://github.com/rolando167/pr-Angular12-crud-node/tree/master/src/app/models
+
+UsuarioModel - Login
+https://github.com/rolando167/ud-angular-login/tree/master/src/app/models
+
+================================================
+*****  PIPES 🆓
+================================================
+objToArray
+https://github.com/rolandoHR93/leptus/blob/master/src/app/pipes/objToArray.pipe.ts
+
+================================================
+mock-api - data  🅰
+========================
+https://github.com/rolandoHR93/front.leptus/blob/master/src/app/mock-api/dashboards/analytics/data.ts
+
+
+================================================
+*****  Guards ###
+================================================
+**this._router.navigate(['sign-in'], {queryParams: {redirectURL}});
+https://github.com/rolandoHR93/front.leptus/blob/master/src/app/core/auth/guards/auth.guard.ts
+const redirectUrl = state.url === '/sign-out' ? '/' : state.url;
+
+ 
+================================================
+*****  QueryStrings
+================================================
+**searchForm: FormGroup;  queryParams: Params;
+https://github.com/rolandoHR93/front.leptus/blob/master/src/app/modules/admin/ui/advanced-search/advanced-search.component.ts
+ this._router.navigate(['./'], {
+            queryParams: this.searchForm.value,
+            relativeTo : this._activatedRoute
+        });
+
+
+// query strings - let params = new HttpParams();
+https://github.com/gavilanch/Angular-8-Curso/blob/master/modulo6/src/app/services/user.service.ts
+https://www.youtube.com/watch?v=z9VfDlQMsDI
+
+
+//Params, Query Params, Router, Activated Route
+https://www.youtube.com/watch?v=CqiAhydKKxg
+
+** this.route.queryParams.subcribe(..., route ActivatedRoute
+https://www.youtube.com/watch?v=IJOlcnP0Pd8
+
+================================================
+*****  Otros
+================================================
+https://github.com/gavilanch/Angular-8-Curso/blob/master/modulo7/src/app/services/auth.service.ts
+https://github.com/gavilanch/Angular-8-Curso/blob/master/modulo7/src/app/posts/posts.component.ts
+
+this.router.navigate(), usuarios: Usuario[];
+https://github.com/gavilanch/Angular-8-Curso/blob/master/modulo7/src/app/usuarios/usuarios-listado/usuarios-listado.component.ts
+
+https://www.youtube.com/watch?v=lReVSh_7bKs
+
+https://stackoverflow.com/questions/69240083/how-to-return-specific-fields-from-a-json-object-array-in-angular-http-service-a
+https://stackoverflow.com/questions/47617169/how-should-i-modify-the-response-to-an-http-request-and-easily-access-it-before
+
+https://pablomagaz.com/blog/como-funcionan-operadores-rxjs
+================================================
+// Get the parent url
+   const parentUrl = state.url.split('/').slice(0, -1).join('/');
+
+// Navigate to there
+this._router.navigateByUrl(parentUrl);
+
+================================================
+// Go to the new contact
+ this._router.navigate(['./', newContact.id], {relativeTo: this._activatedRoute});
+
+================================================ ✔✔✔✔✔
+*****  REFERENCIAS
+================================================
+
+http://blog.enriqueoriol.com/2019/03/aprende-rxjs-1.html
+
+
+================================================
+TIPS AYUDA
+================================================
+
+ // se muestra vacio (pagina blanco) porque faltaba color
+  // en PADRE -> app.modulets: import { HttpClientModule } from '@angular/common/http';
+
+  // aparece el error: falta la cabecera CORS 'Access-Control-Allow-Origin',
+  // desde backend Mockoon, agregar en header, Access-Control-Allow-Origin -  *
+  // https://mockoon.com/docs/latest/cors/
+
+https://jsonplaceholder.typicode.com/
+================================================
+
+================================================
+
+
+================================================
+
