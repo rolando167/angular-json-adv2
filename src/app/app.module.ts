@@ -10,6 +10,7 @@ import { ProductosComponent } from './pages/productos/productos.component';
 import { UsuariosComponent } from './pages/usuarios/usuarios.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductoDetailsComponent } from './pages/producto-details/producto-details.component';
+import { ConvertToSpacesPipe } from './pipes/convert-to-spaces.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProductoDetailsComponent } from './pages/producto-details/producto-deta
     HomeComponent,
     ProductosComponent,
     UsuariosComponent,
-    ProductoDetailsComponent
+    ProductoDetailsComponent,
+    ConvertToSpacesPipe
   ],
   imports: [
     BrowserModule,
