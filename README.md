@@ -1,6 +1,10 @@
 ### 2022
 FrontEnd Angular 🅰 - Json file Api - RouterLink a -Read - Components 2022 
 
+
+ routerLink="home" : Where as without brackets you're passing string only and you can't change it, it's hard coded and it'll be like that throughout your app. <br>
+ <a [routerLink]="routerLinkVariable"></a> : When you use brackets, it means you're passing a bindable property (a variable)., public routerLinkVariable = "/home";
+ 
 # AngularApiAdv2
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
