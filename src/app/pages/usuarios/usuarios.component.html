@@ -10,22 +10,22 @@
     <thead>
       <tr class="table-active">
         <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
+        <th scope="col">Empleo</th>
+        <th scope="col">Email @</th>
+        <th scope="col">Nombres y Apellidos</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+      <tr *ngFor="let item of usuarios">
+        <th scope="row">{{item.ID}}</th>
+        <td>{{item.JobTitle}}</td>
+        <td>{{item.EmailAddress}}</td>
+        <td>{{item.FirstNameLastName}}</td>
       </tr>
     </tbody>
   </table>
-  <div class="text-center">
-    <div class="spinner-border text-primary" role="status">
+  <div class="text-center" *ngIf="isLoading">
+    <div class="spinner-border text-danger" role="status">
       <span class="sr-only">Loading...</span>
     </div>
   </div>

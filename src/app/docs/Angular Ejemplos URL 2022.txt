@@ -172,6 +172,8 @@ https://stackoverflow.com/questions/69240083/how-to-return-specific-fields-from-
 https://stackoverflow.com/questions/47617169/how-should-i-modify-the-response-to-an-http-request-and-easily-access-it-before
 
 https://pablomagaz.com/blog/como-funcionan-operadores-rxjs
+
+https://stackoverflow.com/questions/60797449/how-to-read-json-response-from-a-rest-api-using-angular
 ================================================
 // Get the parent url
    const parentUrl = state.url.split('/').slice(0, -1).join('/');
