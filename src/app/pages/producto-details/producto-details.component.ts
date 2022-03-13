@@ -12,7 +12,7 @@ import { ProductosService } from 'src/app/services/productos.service';
 export class ProductoDetailsComponent implements OnInit, OnDestroy {
 
   errorMessage = '';
-  errorNoExiste = '';
+  errorNoExiste : boolean = false;
 
   product: Producto | undefined;
 
@@ -37,7 +37,8 @@ export class ProductoDetailsComponent implements OnInit, OnDestroy {
 
   getProducto(id: number): void {
     this.interObservableSubs$ = this._productoService.getProduct(id).subscribe({
-      next: product => this.product = product,
+      next: product => {this.product = product; if(!product) this.errorNoExiste = true;
+      },
       error: err => this.errorMessage = err
     });
   }
