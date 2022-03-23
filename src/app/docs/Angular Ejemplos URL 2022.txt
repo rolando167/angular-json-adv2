@@ -133,6 +133,9 @@ https://github.com/rolando167/ud-angular-login/tree/master/src/app/models
 objToArray
 https://github.com/rolandoHR93/leptus/blob/master/src/app/pipes/objToArray.pipe.ts
 
+p> La fecha es {{hoy | fecha:'fullDate'}}</p>
+https://docs.angular.lat/guide/architecture-components
+
 ================================================
 mock-api - data  🅰
 ========================
@@ -169,6 +172,13 @@ https://www.youtube.com/watch?v=CqiAhydKKxg
 ** this.route.queryParams.subcribe(..., route ActivatedRoute
 https://www.youtube.com/watch?v=IJOlcnP0Pd8
 
+this.route.paramMap.subscribe(params => {}
+https://docs.angular.lat/start/start-routing
+
+ clearCart() {}
+https://docs.angular.lat/start/start-data
+
+https://stackblitz.com/angular/eaarvvdlplgp?file=src%2Fapp%2Fhero.service.ts
 ================================================
 *****  Otros
 ================================================
@@ -186,6 +196,12 @@ https://stackoverflow.com/questions/47617169/how-should-i-modify-the-response-to
 https://pablomagaz.com/blog/como-funcionan-operadores-rxjs
 
 https://stackoverflow.com/questions/60797449/how-to-read-json-response-from-a-rest-api-using-angular
+
+delete(hero: Hero): void {}
+https://docs.angular.lat/tutorial/toh-pt6
+
+debounceTime(300), pipe
+https://docs.angular.lat/tutorial/toh-pt6
 ================================================
 // Get the parent url
    const parentUrl = state.url.split('/').slice(0, -1).join('/');
@@ -203,7 +219,13 @@ this._router.navigateByUrl(parentUrl);
 
 http://blog.enriqueoriol.com/2019/03/aprende-rxjs-1.html
 
+https://docs.angular.lat/guide/glossary
 
+https://es.stackoverflow.com/questions/323656/c%C3%B3mo-puedo-instalar-angular-generator-en-vs-code
+
+https://foroayuda.es/como-usar-router-navigatebyurl-y-router-navigate-en-angular/
+
+https://www.acontracorrientech.com/routing-en-angular-guia-completa-parte-5/
 ================================================
 TIPS AYUDA
 ================================================
@@ -220,6 +242,7 @@ https://jsonplaceholder.typicode.com/
 Ojo:
 No olvidar Exportar en app.module (sino pantalla blanca xd) = FormsModule,ReactiveFormsModule, HttpClientModule
 ================================================
+
 
 ================================================
 
