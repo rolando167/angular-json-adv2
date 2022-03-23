@@ -226,7 +226,7 @@ https://es.stackoverflow.com/questions/323656/c%C3%B3mo-puedo-instalar-angular-g
 https://foroayuda.es/como-usar-router-navigatebyurl-y-router-navigate-en-angular/
 
 https://www.acontracorrientech.com/routing-en-angular-guia-completa-parte-5/
-s
+
 ================================================
 TIPS AYUDA
 ================================================
