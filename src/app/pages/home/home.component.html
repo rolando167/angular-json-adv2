@@ -8,9 +8,23 @@
   <div class="shadow-none p-3 mb-5 bg-light rounded">Welcome 2022 - Habla pe</div>
   <p>
     <input type="text" [(ngModel)]="msg">
-             <input type = "button" (click) = "click ()" value = "cambio de información">
+    <input type = "button" (click) = "click ()" value = "cambio de información">
 </p>
 <div>
   <button (click)="ejecutar()" class="btn btn-primary"> Iniciar Session !</button>
+</div>
+
+<div class="my-2">
+  <hr>
+  <input [(ngModel)]="name" #ctrl="ngModel" (ngModelChange)="firstNameChanged($event)" required>
+
+    <p>Value: {{ name }}</p>
+    <p>Valid: {{ ctrl.valid }}</p>
+    <div class="p-3 mb-2 text-white my-2" ngClass="{{colorActual}}">Color Cambio</div>
+    <button (click)="setValue()">Set value</button>
+
+    <hr>
+    <input [(ngModel)]="counter" [style.border-color]="counter > 2 ? '#ff4d4d' : '#dbdbdb'" class="input" type="number">
+    <!-- https://angular.io/api/forms/NgModel -->
 </div>
 </div>

@@ -14,6 +14,24 @@ export class HomeComponent implements OnInit , OnDestroy  {
 
   public msg: string = 'Valor inicial';
 
+  public colorNumber :number = 0;
+  public colorActual :string = "bg-primary";
+
+  public colorsArray = [
+    {"clase": "bg-primary"},
+    {"clase": "bg-secondary"},
+    {"clase": "bg-success"},
+    {"clase": "bg-danger"},
+    {"clase": "bg-warning"},
+    {"clase": "bg-info"},
+    {"clase": "bg-info"},
+    {"clase": "bg-dark"},
+    {"clase": "bg-white"},
+  ]
+
+  name: string = '';
+  counter: number = 1;
+
    // -----
   isUserLoggedIn: boolean = false;
   private subscription!: Subscription; // para poder cerrar el observable
@@ -40,6 +58,10 @@ export class HomeComponent implements OnInit , OnDestroy  {
       // complete: () => console.log('There are no more vowels.') }
 
     );
+    console.warn(this.colorsArray[this.colorNumber].clase);
+
+    this.colorActual = this.colorsArray[this.colorNumber].clase.toString();
+
     // if(sessionStorage.getItem('key') === null){
     //   this._sessionStorageService.guardarDatoSession('009541214eval');
     //   alert('Se almacenó el token 🎯!!');
@@ -52,6 +74,14 @@ export class HomeComponent implements OnInit , OnDestroy  {
     //     this.username = currentUser.username;
     //   }
     // );
+  }
+
+  firstNameChanged(arg: any){
+
+    console.log(arg );
+    this.colorNumber = arg;
+    this.colorActual = this.colorsArray[this.colorNumber].clase.toString();
+
   }
 
   ngOnDestroy(): void {
@@ -67,6 +97,11 @@ export class HomeComponent implements OnInit , OnDestroy  {
   ejecutar(){
    // alert('Iniciando... ');
     this._sessionStorageService.logIn('009541214eval');
+  }
+
+
+  setValue() {
+    this.name = '4';
   }
 
   // https://programmerclick.com/article/61171742177/
